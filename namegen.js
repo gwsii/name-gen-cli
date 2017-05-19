@@ -6,9 +6,7 @@ const argv = require('yargs')
 Usage: $0 [options]
 
 Generate and output a random name.`)
-  .default({
-    words: 2
-  })
+  .default('words', 2)
   .alias('n', 'number')
   .alias('a', 'alliterative')
   .alias('d', 'dashed')
